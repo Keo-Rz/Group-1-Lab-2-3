@@ -1,0 +1,217 @@
+body {
+    background-color: #d0e0d0;
+    background-image: url('bg1.avif');
+    background-size: 100%;
+    background-position: cover;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #455a1e;
+    font-size: 50px;
+}
+
+.container {
+    position: relative;
+    background: #ffffff;
+    margin: auto;
+    width: 80%; 
+    height: 730px;
+    max-width: 1000px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    border: 1px solid #556b2f;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.login {
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 25px;
+}
+
+.signup {
+    background: #d8c8b8;
+    color: #6b4e37;
+    width: 50%; 
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #556b2f;
+}
+
+#login-username,
+#login-password {
+    height: 40px;
+    width: 90%; 
+    max-width: 400px; 
+    border: none;
+    background-color: #d0e0d0;
+    border-radius: 5px;
+}
+
+#forgotpw {
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #556b2f;
+    font-weight: 500;
+}
+
+#log-in-button,
+#sign-up-button {
+    text-align: center;
+    background-color: #556b2f;
+    border: none;
+    color: #ffffff;
+    width: 30%;
+    max-width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+#log-in-button:hover,
+#sign-up-button:hover {
+    background-color: #455a1e;
+}
+
+#login-terms, #signup-terms {
+    order: -1; /* Moves the checkbox to the beginning */
+    margin-right: 5px; /* Adjusts spacing */
+}
+
+.signup-form {
+    background: #d8c8b8;
+    color: #6b4e37;
+    width: 50%; 
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.signup-form h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #556b2f;
+    margin-bottom: 20px; /* Added margin to separate from form */
+}
+
+.signup-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-form input[type="first name"],
+.signup-form input[type="last name"],
+.signup-form input[type="username"],
+.signup-form input[type="password"],
+.signup-form input[type="email"] {
+    height: 40px;
+    width: 80%; 
+    max-width: 400px; 
+    border: none;
+    background-color: #d0e0d0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.signup-form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.signup-form button {
+    text-align: center;
+    background-color: #556b2f;
+    border: none;
+    color: #ffffff;
+    width: 30%;
+    max-width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+    background-color: #455a1e;
+}
+
+#back-button {
+    position: absolute;
+    top: 25px;
+    right: -25px;
+    background-color: transparent; /* Remove background color */
+    border: none;
+    color: #455a1e; /* Change text color */
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Style for the eye icon */
+.toggle-login-password {
+    position: absolute;
+    left: 425px;
+    top: 330px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Style for the eye icon when password is hidden */
+.toggle-login-password.fa-eye-slash {
+    color: #999; /* Change color for hidden password */
+}
+
+/* Style for the eye icon when password is shown */
+.toggle-login-password.fa-eye {
+    color: #556b2f; /* Change color for shown password */
+}
+
+/* Style for the eye icon */
+.toggle-signup-password {
+    position: absolute;
+    right: 145px;
+    top: 400px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Style for the eye icon when password is hidden */
+.toggle-signup-password.fa-lock {
+    color: #999; /* Change color for hidden password */
+}
+
+/* Style for the eye icon when password is shown */
+.toggle-signup-password.fa-unlock {
+    color: #556b2f; /* Change color for shown password */
+}
+
